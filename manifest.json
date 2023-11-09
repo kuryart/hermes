@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Hermes",
+  "version": "1.0",
+  "description": "Hermes is a search engine powered by AI.",
+  "author": "KuryArt",
+  "homepage_url": "https://github.com/kuryart/hermes",
+  "icons": {
+    "16": "public/icons/icon-16.png",
+    "32": "public/icons/icon-32.png",
+    "48": "public/icons/icon-48.png",
+    "128": "public/icons/icon-128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "public/icons/icon-16.png",
+      "32": "public/icons/icon-32.png",
+      "48": "public/icons/icon-48.png",
+      "128": "public/icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "public/js/background.js"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
