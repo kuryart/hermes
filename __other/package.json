@@ -1,0 +1,20 @@
+{
+  "name": "webpack-browser-extension-template",
+  "module": "bundler.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bunx tailwindcss -i ./src/styles/main.css -o ./public/styles/style.css && bun bundler.ts",
+    "tailwind": "bunx tailwindcss -i ./src/styles/main.css -o ./public/styles/style.css --watch",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}' '!build/**' '!node_modules/**'"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^3.3.5",
+    "daisyui": "latest",
+    "bun-types": "latest",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

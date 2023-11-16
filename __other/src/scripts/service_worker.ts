@@ -5,5 +5,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 chrome.action.onClicked.addListener(function () {
-  chrome.tabs.create({ url: "localhost:3000" });
+    // chrome.tabs.create({ url: "chrome://newtab" });
+    chrome.tabs.create({ url: "./index.html" });
 });

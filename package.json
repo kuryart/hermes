@@ -3,6 +3,7 @@
   "module": "src/main.ts",
   "type": "module",
   "scripts": {
+    "build": "bun run builder.ts",
     "dev": "concurrently \"bun run --hot src/main.ts\" \"bun run uno:dev\" \"bun run liveReload\"",
     "liveReload": "bunx beth-stack",
     "start": "bun run uno && bun run src/main.ts",
@@ -35,7 +36,6 @@
     "eslint-plugin-isaacscript": "^3.5.5",
     "eslint-plugin-prettier": "^5.0.0",
     "@types/eslint": "^8.44.2",
-    "pino": "^8.15.1",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
     "typescript": "^5.2.2",
@@ -54,11 +54,11 @@
     "@t3-oss/env-core": "^0.6.1",
     "@tlscipher/holt": "1.1.0",
     "beth-stack": "0.0.33",
+    "browserify": "^17.0.0",
     "drizzle-orm": "^0.28.6",
     "drizzle-typebox": "^0.1.1",
     "elysia": "0.7.4",
     "lucia": "^2.6.0",
-    "pino-pretty": "^10.2.0",
     "zod": "^3.22.2"
   }
 }

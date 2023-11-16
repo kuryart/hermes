@@ -4,14 +4,14 @@ import { cron } from "@elysiajs/cron";
 import { HoltLogger } from "@tlscipher/holt";
 import { bethStack } from "beth-stack/elysia";
 import { Elysia } from "elysia";
-import pretty from "pino-pretty";
+// import pretty from "pino-pretty";
 import { auth } from "../auth";
 import { config } from "../config";
 import { client, db } from "../db";
 
-const stream = pretty({
-  colorize: true,
-});
+// const stream = pretty({
+//   colorize: true,
+// });
 
 const loggerConfig =
   config.env.NODE_ENV === "development"

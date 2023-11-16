@@ -16,15 +16,21 @@ export const BaseHtml = ({ children }: PropsWithChildren) => (
       <link rel="manifest" href="/public/pwa.webmanifest" />
       <link rel="stylesheet" href="/public/dist/unocss.css" />
 
-      <script src="https://unpkg.com/htmx.org@1.9.5"></script>
-      <script src="https://unpkg.com/htmx.org/dist/ext/response-targets.js"></script>
-      <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+      <script type="module" src="https://unpkg.com/htmx.org@1.9.5"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/htmx.org/dist/ext/response-targets.js"
+      ></script>
+      <script
+        type="module"
+        src="https://unpkg.com/hyperscript.org@0.9.11"
+      ></script>
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css"
       />
 
-      <script>{safeScript}</script>
+      <script type="module">{safeScript}</script>
     </head>
     <body hx-boost="true" class="h-screen">
       <h1 class=" bg-blue-500 p-5 text-center text-3xl font-bold text-white shadow-md">
